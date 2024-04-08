@@ -7,6 +7,37 @@ array[i]=sc.nextInt();  ' i ' is first index value
 1. Finding maximum elements of array
 ----------------------------------------  */
 
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int n=sc.nextInt();
+		    int max=0;
+		    int a[]=new int[n];
+		    for(int j=0;j<n;j++){
+		        a[j]=sc.nextInt();
+		        if(a[j]>max)
+		            max=a[j];
+		    }
+		    System.out.println(max);
+		}
+	}
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+
 import java.util.*;
 public class HelloWorld{
 
@@ -19,7 +50,7 @@ public class HelloWorld{
             array[p] = sc.nextInt();
 
         }
-        for(int i=1;i<n;i++){
+        for(int i=0;i<n;i++){
             if(high<array[i]){
             high = array[i];
             }
