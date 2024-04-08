@@ -1,0 +1,55 @@
+/* Arrays in java
+
+int[] array_name = new int[size_of _array];
+for(int i=0;i<n;i++){
+array[i]=sc.nextInt();  ' i ' is first index value 
+
+1. Finding maximum elements of array
+----------------------------------------  */
+
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] array = new int[n];
+         int high = array[0];
+        for(int p=0;p<n;p++){
+            array[p] = sc.nextInt();
+
+        }
+        for(int i=1;i<n;i++){
+            if(high<array[i]){
+            high = array[i];
+            }
+        }
+        System.out.println(high);
+     }
+     }
+
+/* ------------------------------------------------------
+another method same but different some what*/
+
+
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] array = new int[n];
+         int high = array[0];
+        for(int p=0;p<n;p++){
+            array[p] = sc.nextInt();
+        }
+        for(int i=1;i<n-1;i++){
+            int j=i+1;
+            if(high<array[j]){
+            high = array[j];
+
+            }
+        }
+      System.out.println(high);
+     }
+     }
